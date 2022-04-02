@@ -1,0 +1,282 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 10147656674,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User is on Home page",
+            "match": {
+              "location": "Steps.user_is_on_Home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 167681630,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User clicks search bar",
+            "match": {
+              "location": "Steps.user_clicks_search_bar()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 9218583524,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUpBrowser()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "",
+        "description": "",
+        "id": "search-functionality;;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7527336509,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters search item as \"Training\" in the text-box and press enter or click search bar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Training",
+                  "offset": 28
+                }
+              ],
+              "location": "Steps.enters_search_item_as_in_the_text_box_and_press_enter_or_click_search_bar(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 68394688,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should be able to see all the related items.",
+            "match": {
+              "location": "Steps.user_should_be_able_to_see_all_the_related_items()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 10015399162,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User is on Home page",
+            "match": {
+              "location": "Steps.user_is_on_Home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 152228120,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User clicks search bar",
+            "match": {
+              "location": "Steps.user_clicks_search_bar()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7138234123,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUpBrowser()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "",
+        "description": "",
+        "id": "search-functionality;;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9445479938,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters search item as \"Cars\" in the text-box and press enter or click search bar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cars",
+                  "offset": 28
+                }
+              ],
+              "location": "Steps.enters_search_item_as_in_the_text_box_and_press_enter_or_click_search_bar(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 67256888,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should be able to see all the related items.",
+            "match": {
+              "location": "Steps.user_should_be_able_to_see_all_the_related_items()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 10021650353,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User is on Home page",
+            "match": {
+              "location": "Steps.user_is_on_Home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 188883338,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User clicks search bar",
+            "match": {
+              "location": "Steps.user_clicks_search_bar()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 8020200011,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUpBrowser()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "",
+        "description": "",
+        "id": "search-functionality;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6894612529,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User enter search item as \"Training\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Training",
+                  "offset": 27
+                }
+              ],
+              "location": "Steps.user_enter_search_item_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6869010046,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User select a filter options on right hand side",
+            "match": {
+              "location": "Steps.user_select_a_filter_options_on_right_hand_side()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 46745375,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User should see all the related items accordingly.",
+            "match": {
+              "location": "Steps.user_should_see_all_the_related_items_accordingly()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Search functionality",
+    "description": "",
+    "id": "search-functionality",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Search.feature"
+  }
+]
