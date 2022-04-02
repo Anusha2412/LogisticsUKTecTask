@@ -14,7 +14,7 @@ public class ResultPage extends DriversFactory {
     //WebElements
 
     @FindBy(xpath = "//div[@class=\"col-xs-12\"]/h1")
-    WebElement SearchHeading;
+    WebElement SearchResultsHeading;
 
     @FindBy(xpath = "//div[@class=\"media-listing search-results\"]//h2")
     WebElement SearchTitleHeading;
@@ -24,6 +24,9 @@ public class ResultPage extends DriversFactory {
 
     @FindBy(xpath = "//div[@class=\"checkbox\"]//label")
     List<WebElement> FilterOptions;
+
+    @FindBy(xpath = "//p[contains(text(),'No results were found.')]")
+    WebElement CommentTitle;
 
 
 
@@ -35,7 +38,7 @@ public class ResultPage extends DriversFactory {
     //Actions
 
     public String getSearchHeading(){
-        return SearchHeading.getText();
+        return SearchResultsHeading.getText();
     }
 
     public String getSearchTitle(){
@@ -62,6 +65,10 @@ public class ResultPage extends DriversFactory {
 
         }
 
+    }
+
+    public String getComment(){
+        return CommentTitle.getText();
     }
 
 

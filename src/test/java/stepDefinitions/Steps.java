@@ -5,6 +5,7 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import cucumber.api.java.gl.E;
 import drivers.DriversFactory;
 import org.apache.logging.log4j.core.impl.ReusableLogEventFactory;
 import org.openqa.selenium.JavascriptExecutor;
@@ -65,15 +66,17 @@ public class Steps {
     @Then("^User should be able to see all the related items\\.$")
     public void user_should_be_able_to_see_all_the_related_items() {
 
-       String actual = rp.getSearchTitle();
-        String expected= hp.getSearchItem();
-      // String expected = "Training";
-      //  String expected2 = "Cars";
 
+        //Assertion 1 (checking the item name)
+       String actual = rp.getSearchTitle();
+       String expected= hp.getSearchItem();
        assertThat(actual, containsString(expected));
 
-
-       System.out.println(rp.getNoOfSearchResults());
+       //Assertion 2 (Checking that search item is valid)
+       String act = rp.getNoOfSearchResults();
+       String exp ="Showing";
+       assertThat(act, containsString(exp));
+        System.out.println(rp.getNoOfSearchResults());
 
     }
 
@@ -95,5 +98,28 @@ public class Steps {
 
         System.out.println(rp.getNoOfSearchResults());
     }
+
+    @When("^User enter a invalid search item$")
+    public void user_enter_a_invalid_search_item() throws Throwable {
+        hp.enterSearchCriteria(hpr.getRandomAlphanumeric(7));
+
+
+    }
+
+    @When("^click on search button$")
+    public void click_on_search_button() throws Throwable {
+        hp.clickSEARCHbtn();
+        Thread.sleep(1000);
+
+    }
+
+    @Then("^User should see No results found message$")
+    public void user_should_see_No_results_found_message() throws Throwable {
+       String Actual= rp.getComment();
+       String Expected = "No results were found.";
+       assertThat(Actual, containsString(Expected));
+
+    }
+
 
 }

@@ -20,3 +20,10 @@ Feature: Search functionality
     Then User should see all the related items accordingly.
 
 
+  Scenario:
+    When User enter a invalid search item
+    And click on search button
+    Then User should see No results found message
+
+
+
